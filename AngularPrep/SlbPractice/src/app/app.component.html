@@ -6,5 +6,13 @@
 </div>
 <wj-flex-grid [itemsSource]="data">
 </wj-flex-grid>
+<form [formGroup]="sampleForm">
+  <div class="form-group">
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="name">
+    </label>
+  </div>
+  <p>Name value: {{ sampleForm.get('name').value }}</p>
 
+</form>
 <router-outlet></router-outlet>
