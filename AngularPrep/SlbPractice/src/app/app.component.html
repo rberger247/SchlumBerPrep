@@ -1,8 +1,13 @@
 <nav class="nav nav-bar">
- <a class= "btn btn-primary"routerLink="/signIn"> signIn</a>
+ <a class= "btn btn-primary"routerLink="/signIn"> Can Activate route guard</a>
 </nav>
+<br>
+<a class= "btn btn-primary"routerLink="/PracticePipe"> pipe Samples</a>
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+
+    <router-outlet></router-outlet>
+    <br>
   <h1>
     Welcome to Wijmo Demo!
   </h1>
@@ -18,8 +23,14 @@
     </label>
   </div>
   
-  <p>Name value: {{ sampleForm.get('name').value }}</p>
 </fieldset >
 </legend>
 </form>
-<router-outlet></router-outlet>
+
+<p>Name value: {{ sampleForm.get('name').value }}</p>
+<br>
+
+
+<br>
+<br>
+
