@@ -1,18 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Welcome to Wijmo Demo!
   </h1>
 </div>
 <wj-flex-grid [itemsSource]="data">
 </wj-flex-grid>
 <form [formGroup]="sampleForm">
+  <legend class="col-form-legend col-sm-2">
+      <fieldset class="">
   <div class="form-group">
     <label class="center-block">Name:
       <input class="form-control" formControlName="name">
     </label>
   </div>
+  
   <p>Name value: {{ sampleForm.get('name').value }}</p>
-
+</fieldset >
+</legend>
 </form>
 <router-outlet></router-outlet>
