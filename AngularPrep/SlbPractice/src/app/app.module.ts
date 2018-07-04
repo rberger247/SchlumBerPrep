@@ -13,6 +13,7 @@ import { NotFoundComponent } from './not-found.component';
 import { SignInComponent } from './account/sign-in/sign-in.component';
 import { TestPipePipe } from './pipes/test-pipe.pipe';
 import { PipePracticeComponent } from './pipes/pipe-practice/pipe-practice.component';
+import { CoolFeatureModule } from './coolFeature/cool-feature/cool-feature.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PipePracticeComponent } from './pipes/pipe-practice/pipe-practice.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CoolFeatureModule,
     ReactiveFormsModule,
     FormsModule,
     WjGridModule,
