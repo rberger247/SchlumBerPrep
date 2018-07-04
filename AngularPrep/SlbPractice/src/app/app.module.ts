@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { DataSvcService } from './data-svc.service';
 
 import { NotFoundComponent } from './not-found.component';
+import { SignInComponent } from './account/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

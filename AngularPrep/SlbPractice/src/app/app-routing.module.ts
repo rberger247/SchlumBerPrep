@@ -2,11 +2,13 @@ import { AuthGuard } from './auth/guards/auth.guard';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from './not-found.component';
+import { SignInComponent } from './account/sign-in/sign-in.component';
 
 const routes: Routes = [
-  {path: 'NotFound', component: NotFoundComponent,
-canActivate: [AuthGuard]
-}
+  {path: 'signIn',
+   component: SignInComponent,
+   canActivate: [AuthGuard]},
+  {path: 'NotFound', component: NotFoundComponent}
 ];
 
 @NgModule({

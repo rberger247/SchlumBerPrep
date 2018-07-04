@@ -20,6 +20,8 @@ export class AuthGuard implements CanActivate {
       this.router.navigate(['NotFound']);
       return false;
     }
+    else
+
     return true;
 
   }
