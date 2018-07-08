@@ -14,6 +14,7 @@ import { SignInComponent } from './account/sign-in/sign-in.component';
 import { TestPipePipe } from './pipes/test-pipe.pipe';
 import { PipePracticeComponent } from './pipes/pipe-practice/pipe-practice.component';
 import { CoolFeatureModule } from './coolFeature/cool-feature/cool-feature.module';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CoolFeatureModule } from './coolFeature/cool-feature/cool-feature.modul
     NotFoundComponent,
     SignInComponent,
     TestPipePipe,
-    PipePracticeComponent
+    PipePracticeComponent,
+    FormComponent
    
   ],
   imports: [
